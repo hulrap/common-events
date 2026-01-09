@@ -66,9 +66,9 @@ const nextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googleapis.com https://*.google.com https://*.gstatic.com",
               "style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.google.com https://*.gstatic.com",
-              "img-src 'self' blob: data: https://*.googleapis.com https://*.google.com https://*.gstatic.com https://*.googleusercontent.com",
+              `img-src 'self' blob: data: https://${siteDomain} https://*.googleapis.com https://*.google.com https://*.gstatic.com https://*.googleusercontent.com`,
               "font-src 'self' https://*.gstatic.com",
-              "connect-src 'self' data: https://*.googleapis.com https://*.google.com https://*.gstatic.com",
+              `connect-src 'self' data: https://${siteDomain} https://*.googleapis.com https://*.google.com https://*.gstatic.com`,
               "frame-src 'self' https://*.google.com",
               "worker-src 'self' blob:",
             ].join("; ")
