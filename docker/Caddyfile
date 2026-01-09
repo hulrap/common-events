@@ -1,0 +1,54 @@
+{
+	# Global options
+	email {$ACME_EMAIL:admin@example.com}
+}
+
+# Main site configuration
+{$SITE_DOMAIN:localhost} {
+	# Enable compression
+	encode gzip zstd
+
+	# Logging
+	log {
+		output file /var/log/caddy/access.log
+		format json
+	}
+
+	# Security headers
+	header {
+		X-Content-Type-Options nosniff
+		X-Frame-Options SAMEORIGIN
+		X-XSS-Protection "1; mode=block"
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+
+	# GoTrue auth endpoints - proxy to auth service
+	handle /auth/* {
+		reverse_proxy gotrue:9999
+	}
+
+	# MinIO storage - proxy to storage service (public bucket access)
+	handle /storage/* {
+		uri strip_prefix /storage
+		reverse_proxy minio:9000 {
+			header_up Host {upstream_hostport}
+		}
+	}
+
+	# MinIO console (admin only - consider restricting access)
+	handle /minio-console/* {
+		uri strip_prefix /minio-console
+		reverse_proxy minio:9001
+	}
+
+	# Main application - proxy everything else to Next.js
+	handle {
+		reverse_proxy app:3000
+	}
+}
+
+# Health check endpoint (optional, for load balancers)
+:8080 {
+	respond /health "OK" 200
+}

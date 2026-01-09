@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm your signup</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #e4e4e7;
+        }
+
+        .wrapper {
+            width: 100%;
+            background-color: #000000;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 24px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .heading {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #a1a1aa;
+            margin-bottom: 32px;
+        }
+
+        .button {
+            background-color: #fe6753;
+            color: #ffffff !important;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 9999px;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(254, 103, 83, 0.3);
+        }
+
+        .footer {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 12px;
+            color: #52525b;
+        }
+
+        a.link {
+            color: #fe6753;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="logo">COMMON EVENTS</span>
+            </div>
+            <div class="card">
+                <h2 class="heading">Confirm your signup</h2>
+                <p class="text">Welcome to the community! Please confirm your email address to get started and unlock
+                    full access to events.</p>
+                <a href="{{.ConfirmationURL}}" class="button">Confirm Email</a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2025 Common Events. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

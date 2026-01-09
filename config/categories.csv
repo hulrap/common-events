@@ -1,0 +1,86 @@
+id,name,color,description,parent_id,sort_order
+party,"Party & Nightlife",#E91E63,,,10
+party-clubbing,"Clubbing",#D81B60,,,11
+party-rave,"Rave",#C2185B,,,12
+party-circuit,"Circuit Party",#AD1457,,,13
+party-afterhour,"Afterhour",#880E4F,,,14
+party-teadance,"Tea Dance",#EC407A,,,15
+party-bear,"Bear Events",#795548,,,16
+party-lesbian,"Lesbian / FLINTA*",#9C27B0,,,17
+party-drag,"Drag Party",#BA68C8,,,18
+party-karaoke,"Karaoke",#F06292,,,19
+party-bingo,"Bingo",#F48FB1,,,20
+party-quiz,"Pub Quiz",#F8BBD0,,,21
+fetish,"Fetish & Kink",#212121,,,30
+fetish-leather,"Leather",#3E2723,,,31
+fetish-rubber,"Rubber & Latex",#263238,,,32
+fetish-puppy,"Puppy Play",#4E342E,,,33
+fetish-bondage,"Bondage & Shibari",#424242,,,34
+fetish-play,"Play Party",#616161,,,35
+fetish-tantra,"Tantra & Bodywork",#757575,,,36
+fetish-workshop,"Kink Workshop",#9E9E9E,,,37
+fetish-cruising,"Cruising",#212121,,,38
+stage,"Stage & Performance",#673AB7,,,40
+stage-theater,"Theater",#5E35B1,,,41
+stage-musical,"Musical",#512DA8,,,42
+stage-cabaret,"Kabarett & Comedy",#4527A0,,,43
+stage-standup,"Stand-up Comedy",#5E35B1,,,44
+stage-dragshow,"Drag Show",#7E57C2,,,45
+stage-dance,"Dance Performance",#311B92,,,46
+stage-opera,"Opera & Operetta",#9575CD,,,47
+stage-poetry,"Poetry Slam",#B39DDB,,,48
+stage-spoken,"Spoken Word",#D1C4E9,,,49
+stage-circus,"Circus & Variety",#651FFF,,,50
+concert,"Concert & Music",#3F51B5,,,60
+concert-pop,"Pop",#3949AB,,,61
+concert-rock,"Rock & Alternative",#303F9F,,,62
+concert-jazz,"Jazz & Blues",#283593,,,63
+concert-electronic,"Electronic Live",#1A237E,,,64
+concert-classical,"Classical Music",#1A237E,,,65
+concert-choir,"Choir & Vocal",#7986CB,,,66
+concert-schlager,"Schlager & Wienerlied",#5C6BC0,,,67
+concert-openmic,"Open Mic (Music)",#3D5AFE,,,68
+culture,"Art & Culture",#2196F3,,,70
+culture-exhibition,"Exhibition & Gallery",#1E88E5,,,71
+culture-vernissage,"Vernissage",#1976D2,,,72
+culture-literature,"Literature & Reading",#1565C0,,,73
+culture-film,"Film & Cinema",#0D47A1,,,74
+culture-museum,"Museum & Tours",#0277BD,,,75
+culture-history,"Queer History",#0288D1,,,76
+community,"Community & Social",#00BCD4,,,80
+community-meetup,"Meetup & Socializing",#00ACC1,,,81
+community-trans,"Trans* & Non-Binary",#0097A7,,,82
+community-inter,"Intersex",#00838F,,,83
+community-bipoc,"BIPOC / QTPOC",#006064,,,84
+community-refugees,"Refugees & Newcomers",#4DD0E1,,,85
+community-youth,"Youth",#26C6DA,,,86
+community-seniors,"Seniors",#00BCD4,,,87
+community-family,"Rainbow Families",#80DEEA,,,88
+community-singles,"Singles & Dating",#B2EBF2,,,89
+community-support,"Support Group",#0097A7,,,90
+community-faith,"Spirituality & Religion",#00838F,,,91
+community-pride,"Pride & Parade",#00E5FF,,,92
+sports,"Sports & Activities",#4CAF50,,,100
+sports-yoga,"Yoga & Mindfulness",#43A047,,,101
+sports-hiking,"Hiking & Outdoor",#388E3C,,,102
+sports-running,"Running",#2E7D32,,,103
+sports-swimming,"Swimming",#1B5E20,,,104
+sports-team,"Team Sports (Volleyball, Football)",#66BB6A,,,105
+sports-dance,"Dance Class (Ballroom, Vogue)",#81C784,,,106
+education,"Education & Politics",#009688,,,110
+education-workshop,"Workshop & Seminar",#00897B,,,111
+education-talk,"Talk & Panel Discussion",#00796B,,,112
+education-political,"Political & Activism",#00695C,,,113
+education-health,"Health & Sexual Health",#004D40,,,114
+education-tech,"Tech & Coding",#26A69A,,,115
+education-language,"Language Exchange",#4DB6AC,,,116
+lifestyle,"Lifestyle & Leisure",#8BC34A,,,120
+lifestyle-food,"Food & Drink",#7CB342,,,121
+lifestyle-brunch,"Brunch",#689F38,,,122
+lifestyle-wine,"Wine & Tasting",#558B2F,,,123
+lifestyle-travel,"Travel & Tours",#33691E,,,124
+lifestyle-market,"Market & Flea Market",#9CCC65,,,125
+lifestyle-ball,"Ball & Gala",#AED581,,,126
+lifestyle-sauna,"Sauna & Wellness",#C5E1A5,,,127
+lifestyle-gaming,"Gaming & E-Sports",#DCEDC8,,,128
+lifestyle-fashion,"Fashion & Beauty",#F1F8E9,,,129

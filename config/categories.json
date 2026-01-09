@@ -1,0 +1,682 @@
+[
+  {
+    "id": "party",
+    "name": "Party & Nightlife",
+    "color": "#E91E63",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 10
+  },
+  {
+    "id": "party-clubbing",
+    "name": "Clubbing",
+    "color": "#D81B60",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 11
+  },
+  {
+    "id": "party-rave",
+    "name": "Rave",
+    "color": "#C2185B",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 12
+  },
+  {
+    "id": "party-circuit",
+    "name": "Circuit Party",
+    "color": "#AD1457",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 13
+  },
+  {
+    "id": "party-afterhour",
+    "name": "Afterhour",
+    "color": "#880E4F",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 14
+  },
+  {
+    "id": "party-teadance",
+    "name": "Tea Dance",
+    "color": "#EC407A",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 15
+  },
+  {
+    "id": "party-bear",
+    "name": "Bear Events",
+    "color": "#795548",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 16
+  },
+  {
+    "id": "party-lesbian",
+    "name": "Lesbian / FLINTA*",
+    "color": "#9C27B0",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 17
+  },
+  {
+    "id": "party-drag",
+    "name": "Drag Party",
+    "color": "#BA68C8",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 18
+  },
+  {
+    "id": "party-karaoke",
+    "name": "Karaoke",
+    "color": "#F06292",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 19
+  },
+  {
+    "id": "party-bingo",
+    "name": "Bingo",
+    "color": "#F48FB1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 20
+  },
+  {
+    "id": "party-quiz",
+    "name": "Pub Quiz",
+    "color": "#F8BBD0",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 21
+  },
+  {
+    "id": "fetish",
+    "name": "Fetish & Kink",
+    "color": "#212121",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 30
+  },
+  {
+    "id": "fetish-leather",
+    "name": "Leather",
+    "color": "#3E2723",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 31
+  },
+  {
+    "id": "fetish-rubber",
+    "name": "Rubber & Latex",
+    "color": "#263238",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 32
+  },
+  {
+    "id": "fetish-puppy",
+    "name": "Puppy Play",
+    "color": "#4E342E",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 33
+  },
+  {
+    "id": "fetish-bondage",
+    "name": "Bondage & Shibari",
+    "color": "#424242",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 34
+  },
+  {
+    "id": "fetish-play",
+    "name": "Play Party",
+    "color": "#616161",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 35
+  },
+  {
+    "id": "fetish-tantra",
+    "name": "Tantra & Bodywork",
+    "color": "#757575",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 36
+  },
+  {
+    "id": "fetish-workshop",
+    "name": "Kink Workshop",
+    "color": "#9E9E9E",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 37
+  },
+  {
+    "id": "fetish-cruising",
+    "name": "Cruising",
+    "color": "#212121",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 38
+  },
+  {
+    "id": "stage",
+    "name": "Stage & Performance",
+    "color": "#673AB7",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 40
+  },
+  {
+    "id": "stage-theater",
+    "name": "Theater",
+    "color": "#5E35B1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 41
+  },
+  {
+    "id": "stage-musical",
+    "name": "Musical",
+    "color": "#512DA8",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 42
+  },
+  {
+    "id": "stage-cabaret",
+    "name": "Kabarett & Comedy",
+    "color": "#4527A0",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 43
+  },
+  {
+    "id": "stage-standup",
+    "name": "Stand-up Comedy",
+    "color": "#5E35B1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 44
+  },
+  {
+    "id": "stage-dragshow",
+    "name": "Drag Show",
+    "color": "#7E57C2",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 45
+  },
+  {
+    "id": "stage-dance",
+    "name": "Dance Performance",
+    "color": "#311B92",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 46
+  },
+  {
+    "id": "stage-opera",
+    "name": "Opera & Operetta",
+    "color": "#9575CD",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 47
+  },
+  {
+    "id": "stage-poetry",
+    "name": "Poetry Slam",
+    "color": "#B39DDB",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 48
+  },
+  {
+    "id": "stage-spoken",
+    "name": "Spoken Word",
+    "color": "#D1C4E9",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 49
+  },
+  {
+    "id": "stage-circus",
+    "name": "Circus & Variety",
+    "color": "#651FFF",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 50
+  },
+  {
+    "id": "concert",
+    "name": "Concert & Music",
+    "color": "#3F51B5",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 60
+  },
+  {
+    "id": "concert-pop",
+    "name": "Pop",
+    "color": "#3949AB",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 61
+  },
+  {
+    "id": "concert-rock",
+    "name": "Rock & Alternative",
+    "color": "#303F9F",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 62
+  },
+  {
+    "id": "concert-jazz",
+    "name": "Jazz & Blues",
+    "color": "#283593",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 63
+  },
+  {
+    "id": "concert-electronic",
+    "name": "Electronic Live",
+    "color": "#1A237E",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 64
+  },
+  {
+    "id": "concert-classical",
+    "name": "Classical Music",
+    "color": "#1A237E",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 65
+  },
+  {
+    "id": "concert-choir",
+    "name": "Choir & Vocal",
+    "color": "#7986CB",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 66
+  },
+  {
+    "id": "concert-schlager",
+    "name": "Schlager & Wienerlied",
+    "color": "#5C6BC0",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 67
+  },
+  {
+    "id": "concert-openmic",
+    "name": "Open Mic (Music)",
+    "color": "#3D5AFE",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 68
+  },
+  {
+    "id": "culture",
+    "name": "Art & Culture",
+    "color": "#2196F3",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 70
+  },
+  {
+    "id": "culture-exhibition",
+    "name": "Exhibition & Gallery",
+    "color": "#1E88E5",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 71
+  },
+  {
+    "id": "culture-vernissage",
+    "name": "Vernissage",
+    "color": "#1976D2",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 72
+  },
+  {
+    "id": "culture-literature",
+    "name": "Literature & Reading",
+    "color": "#1565C0",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 73
+  },
+  {
+    "id": "culture-film",
+    "name": "Film & Cinema",
+    "color": "#0D47A1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 74
+  },
+  {
+    "id": "culture-museum",
+    "name": "Museum & Tours",
+    "color": "#0277BD",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 75
+  },
+  {
+    "id": "culture-history",
+    "name": "Queer History",
+    "color": "#0288D1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 76
+  },
+  {
+    "id": "community",
+    "name": "Community & Social",
+    "color": "#00BCD4",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 80
+  },
+  {
+    "id": "community-meetup",
+    "name": "Meetup & Socializing",
+    "color": "#00ACC1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 81
+  },
+  {
+    "id": "community-trans",
+    "name": "Trans* & Non-Binary",
+    "color": "#0097A7",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 82
+  },
+  {
+    "id": "community-inter",
+    "name": "Intersex",
+    "color": "#00838F",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 83
+  },
+  {
+    "id": "community-bipoc",
+    "name": "BIPOC / QTPOC",
+    "color": "#006064",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 84
+  },
+  {
+    "id": "community-refugees",
+    "name": "Refugees & Newcomers",
+    "color": "#4DD0E1",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 85
+  },
+  {
+    "id": "community-youth",
+    "name": "Youth",
+    "color": "#26C6DA",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 86
+  },
+  {
+    "id": "community-seniors",
+    "name": "Seniors",
+    "color": "#00BCD4",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 87
+  },
+  {
+    "id": "community-family",
+    "name": "Rainbow Families",
+    "color": "#80DEEA",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 88
+  },
+  {
+    "id": "community-singles",
+    "name": "Singles & Dating",
+    "color": "#B2EBF2",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 89
+  },
+  {
+    "id": "community-support",
+    "name": "Support Group",
+    "color": "#0097A7",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 90
+  },
+  {
+    "id": "community-faith",
+    "name": "Spirituality & Religion",
+    "color": "#00838F",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 91
+  },
+  {
+    "id": "community-pride",
+    "name": "Pride & Parade",
+    "color": "#00E5FF",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 92
+  },
+  {
+    "id": "sports",
+    "name": "Sports & Activities",
+    "color": "#4CAF50",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 100
+  },
+  {
+    "id": "sports-yoga",
+    "name": "Yoga & Mindfulness",
+    "color": "#43A047",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 101
+  },
+  {
+    "id": "sports-hiking",
+    "name": "Hiking & Outdoor",
+    "color": "#388E3C",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 102
+  },
+  {
+    "id": "sports-running",
+    "name": "Running",
+    "color": "#2E7D32",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 103
+  },
+  {
+    "id": "sports-swimming",
+    "name": "Swimming",
+    "color": "#1B5E20",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 104
+  },
+  {
+    "id": "sports-team",
+    "name": "Team Sports (Volleyball, Football)",
+    "color": "#66BB6A",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 105
+  },
+  {
+    "id": "sports-dance",
+    "name": "Dance Class (Ballroom, Vogue)",
+    "color": "#81C784",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 106
+  },
+  {
+    "id": "education",
+    "name": "Education & Politics",
+    "color": "#009688",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 110
+  },
+  {
+    "id": "education-workshop",
+    "name": "Workshop & Seminar",
+    "color": "#00897B",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 111
+  },
+  {
+    "id": "education-talk",
+    "name": "Talk & Panel Discussion",
+    "color": "#00796B",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 112
+  },
+  {
+    "id": "education-political",
+    "name": "Political & Activism",
+    "color": "#00695C",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 113
+  },
+  {
+    "id": "education-health",
+    "name": "Health & Sexual Health",
+    "color": "#004D40",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 114
+  },
+  {
+    "id": "education-tech",
+    "name": "Tech & Coding",
+    "color": "#26A69A",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 115
+  },
+  {
+    "id": "education-language",
+    "name": "Language Exchange",
+    "color": "#4DB6AC",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 116
+  },
+  {
+    "id": "lifestyle",
+    "name": "Lifestyle & Leisure",
+    "color": "#8BC34A",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 120
+  },
+  {
+    "id": "lifestyle-food",
+    "name": "Food & Drink",
+    "color": "#7CB342",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 121
+  },
+  {
+    "id": "lifestyle-brunch",
+    "name": "Brunch",
+    "color": "#689F38",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 122
+  },
+  {
+    "id": "lifestyle-wine",
+    "name": "Wine & Tasting",
+    "color": "#558B2F",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 123
+  },
+  {
+    "id": "lifestyle-travel",
+    "name": "Travel & Tours",
+    "color": "#33691E",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 124
+  },
+  {
+    "id": "lifestyle-market",
+    "name": "Market & Flea Market",
+    "color": "#9CCC65",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 125
+  },
+  {
+    "id": "lifestyle-ball",
+    "name": "Ball & Gala",
+    "color": "#AED581",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 126
+  },
+  {
+    "id": "lifestyle-sauna",
+    "name": "Sauna & Wellness",
+    "color": "#C5E1A5",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 127
+  },
+  {
+    "id": "lifestyle-gaming",
+    "name": "Gaming & E-Sports",
+    "color": "#DCEDC8",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 128
+  },
+  {
+    "id": "lifestyle-fashion",
+    "name": "Fashion & Beauty",
+    "color": "#F1F8E9",
+    "description": null,
+    "parent_id": null,
+    "sort_order": 129
+  }
+]

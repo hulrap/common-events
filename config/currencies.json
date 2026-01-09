@@ -1,0 +1,7 @@
+[
+  { "code": "EUR", "symbol": "€", "name": "Euro", "default": true },
+  { "code": "USD", "symbol": "$", "name": "US Dollar" },
+  { "code": "GBP", "symbol": "£", "name": "British Pound" },
+  { "code": "CHF", "symbol": "CHF", "name": "Swiss Franc" }
+]
+

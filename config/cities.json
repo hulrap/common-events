@@ -1,0 +1,12 @@
+[
+  { "id": "vienna", "name": "Vienna", "country": "Austria" },
+  { "id": "graz", "name": "Graz", "country": "Austria" },
+  { "id": "linz", "name": "Linz", "country": "Austria" },
+  { "id": "salzburg", "name": "Salzburg", "country": "Austria" },
+  { "id": "innsbruck", "name": "Innsbruck", "country": "Austria" },
+  { "id": "klagenfurt", "name": "Klagenfurt", "country": "Austria" },
+  { "id": "villach", "name": "Villach", "country": "Austria" },
+  { "id": "wels", "name": "Wels", "country": "Austria" },
+  { "id": "sankt-poelten", "name": "Sankt Pölten", "country": "Austria" }
+]
+
