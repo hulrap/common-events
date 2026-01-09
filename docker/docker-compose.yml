@@ -16,7 +16,7 @@ services:
     ports:
       - "127.0.0.1:5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -74,7 +74,7 @@ services:
       - "127.0.0.1:9000:9000"
       - "127.0.0.1:9001:9001"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      test: [ "CMD", "curl", "-f", "http://localhost:9000/minio/health/live" ]
       interval: 30s
       timeout: 20s
       retries: 3
@@ -97,20 +97,30 @@ services:
         condition: service_healthy
     environment:
       NODE_ENV: production
+      # Database
       DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@db:5432/common_events
       DATABASE_MAX_CONNECTIONS: 20
+      # Supabase client (points to self-hosted GoTrue)
       NEXT_PUBLIC_SUPABASE_URL: ${SITE_URL}
       NEXT_PUBLIC_SUPABASE_ANON_KEY: ${ANON_KEY}
       SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_ROLE_KEY}
       GOTRUE_URL: http://gotrue:9999
+      # MinIO Storage
       MINIO_ENDPOINT: http://minio:9000
       MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
       MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
       NEXT_PUBLIC_STORAGE_URL: ${SITE_URL}/storage/event-banners
+      # Security
       CSRF_SECRET: ${CSRF_SECRET}
+      CRON_SECRET: ${CRON_SECRET}
+      # Google Maps
       NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY}
-      VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY}
+      # VAPID Push Notifications
+      NEXT_PUBLIC_VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY}
       VAPID_PRIVATE_KEY: ${VAPID_PRIVATE_KEY}
+      # Site URL for calendar/links
+      NEXT_PUBLIC_SITE_URL: ${SITE_URL}
+      SITE_DOMAIN: ${SITE_DOMAIN}
     ports:
       - "127.0.0.1:3000:3000"
     networks:
