@@ -24,7 +24,12 @@
 	}
 
 	# GoTrue auth endpoints - proxy to auth service
-	handle /auth/* {
+	handle /auth/v1/* {
+		uri strip_prefix /auth/v1
+		reverse_proxy gotrue:9999
+	}
+
+    handle /auth/* {
 		uri strip_prefix /auth
 		reverse_proxy gotrue:9999
 	}
