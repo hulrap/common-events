@@ -138,6 +138,9 @@ services:
     image: caddy:2-alpine
     container_name: common-events-proxy
     restart: unless-stopped
+    environment:
+      - SITE_DOMAIN=${SITE_DOMAIN}
+      - ACME_EMAIL=${ACME_EMAIL}
     ports:
       - "80:80"
       - "443:443"
