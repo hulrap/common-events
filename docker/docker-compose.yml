@@ -86,6 +86,13 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${SITE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${ANON_KEY}
+        NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY}
+        NEXT_PUBLIC_VAPID_PUBLIC_KEY: ${VAPID_PUBLIC_KEY}
+        NEXT_PUBLIC_SITE_URL: ${SITE_URL}
+        SITE_DOMAIN: ${SITE_DOMAIN}
     container_name: common-events-app
     restart: unless-stopped
     depends_on:
