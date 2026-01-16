@@ -100,6 +100,69 @@ services:
     networks:
       - internal
 
+  # Postgres Meta - Required for Supabase Studio
+  meta:
+    image: supabase/postgres-meta:v0.83.2
+    container_name: common-events-meta
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PG_META_PORT: 8080
+      PG_META_DB_HOST: db
+      PG_META_DB_PORT: 5432
+      PG_META_DB_NAME: common_events
+      PG_META_DB_USER: postgres
+      PG_META_DB_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:8080:8080"
+    networks:
+      - internal
+
+  # Supabase Studio - Admin Panel
+  studio:
+    image: supabase/studio:20240101-8e4a094
+    container_name: common-events-studio
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      meta:
+        condition: service_started
+      gotrue:
+        condition: service_started
+    environment:
+      STUDIO_PG_META_URL: http://meta:8080
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+      SUPABASE_URL: http://kong:8000
+      SUPABASE_PUBLIC_URL: ${SITE_URL}
+      SUPABASE_ANON_KEY: ${ANON_KEY}
+      SUPABASE_SERVICE_KEY: ${SERVICE_ROLE_KEY}
+
+      AUTH_JWT_SECRET: ${JWT_SECRET}
+
+      # Dashboard Authentication (required for security!)
+      DASHBOARD_USERNAME: ${DASHBOARD_USERNAME:-admin}
+      DASHBOARD_PASSWORD: ${DASHBOARD_PASSWORD}
+
+      # Direct database connection for table editor
+      NEXT_PUBLIC_SUPABASE_URL: ${SITE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${ANON_KEY}
+
+      DEFAULT_ORGANIZATION_NAME: "Common Events"
+      DEFAULT_PROJECT_NAME: "common-events"
+
+      # Logging
+      LOGFLARE_API_KEY: ""
+      LOGFLARE_URL: ""
+      NEXT_ANALYTICS_BACKEND_PROVIDER: ""
+    ports:
+      - "127.0.0.1:3002:3000"
+    networks:
+      - internal
+
   # Next.js Application
   app:
     build:
@@ -171,6 +234,7 @@ services:
       - app
       - gotrue
       - minio
+      - studio
     networks:
       - internal
       - external

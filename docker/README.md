@@ -114,19 +114,18 @@ npm run db:migrate
 │                                                 │
 │  Internet → Caddy (80/443)                      │
 │               ↓                                 │
-│         ┌─────┴─────┐                           │
-│         ↓           ↓                           │
-│     Next.js    GoTrue (Auth)                    │
-│     (3000)       (9999)                         │
-│         ↓           ↓                           │
-│         └─────┬─────┘                           │
-│               ↓                                 │
-│        PostgreSQL 16                            │
-│        + PostGIS                                │
-│          (5432)                                 │
-│                                                 │
-│        MinIO Storage                            │
-│         (9000/9001)                             │
+│    ┌──────┬──┴──┬───────┬────────┐              │
+│    ↓      ↓     ↓       ↓        ↓              │
+│ Next.js GoTrue Studio  Meta   MinIO             │
+│ (3000)  (9999) (3002) (8080) (9000)             │
+│    ↓      ↓     ↓       ↓        │              │
+│    └──────┴─────┴───────┘        │              │
+│               ↓                  │              │
+│        PostgreSQL 16             │              │
+│        + PostGIS                 │              │
+│          (5432)                  │              │
+│               ↑                  │              │
+│               └──────────────────┘              │
 │                                                 │
 └─────────────────────────────────────────────────┘
 ```
@@ -138,6 +137,8 @@ npm run db:migrate
 | `caddy` | 80, 443 | Reverse proxy with auto-HTTPS |
 | `app` | 3000 | Next.js application |
 | `gotrue` | 9999 | Authentication (Supabase-compatible) |
+| `studio` | 3002 | Supabase Studio admin panel |
+| `meta` | 8080 | Postgres metadata API (for Studio) |
 | `db` | 5432 | PostgreSQL 16 with PostGIS |
 | `minio` | 9000, 9001 | S3-compatible object storage |
 
@@ -184,9 +185,27 @@ docker exec -i common-events-db psql -U postgres common_events < backup_20260109
 docker exec -it common-events-db psql -U postgres common_events
 ```
 
+### Access Supabase Studio (Admin Panel)
+
+Supabase Studio provides a graphical interface for managing your database and auth users:
+
+```
+https://your-domain.com/studio/
+```
+
+Login with the credentials from your `.env` file:
+- **Username**: `DASHBOARD_USERNAME` (default: `admin`)
+- **Password**: `DASHBOARD_PASSWORD`
+
+Use Studio to:
+- View and edit database tables (including `auth.users`)
+- Run SQL queries
+- Manage authentication settings
+- Debug migration issues
+
 ### Access MinIO Console
 
-The MinIO admin console is available at `https://your-domain.com/minio-console/` (if configured in Caddyfile).
+The MinIO admin console is available at `https://your-domain.com/minio-console/`.
 
 ## Scaling
 

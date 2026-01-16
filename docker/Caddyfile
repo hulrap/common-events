@@ -35,7 +35,7 @@
 		reverse_proxy gotrue:9999
 	}
 
-    handle /auth/* {
+	handle /auth/* {
 		uri strip_prefix /auth
 		reverse_proxy gotrue:9999
 	}
@@ -52,6 +52,16 @@
 	handle /minio-console/* {
 		uri strip_prefix /minio-console
 		reverse_proxy minio:9001
+	}
+
+	# Supabase Studio Admin Panel (protected by DASHBOARD_USERNAME/PASSWORD in Studio itself)
+	handle /studio/* {
+		uri strip_prefix /studio
+		reverse_proxy studio:3000
+	}
+
+	handle /studio {
+		redir /studio/ permanent
 	}
 
 	# Main application - proxy everything else to Next.js
