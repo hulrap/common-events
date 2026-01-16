@@ -44,3 +44,7 @@ next-env.d.ts
 architecture.md
 generate-favicon.js 
 docs/
+
+localREADME.md
+.ssh/*
+.ssh/
