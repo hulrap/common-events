@@ -75,9 +75,13 @@
 	respond /health "OK" 200
 }
 
-# Supabase Studio Admin Panel (subdomain for proper asset loading)
+# Supabase Studio Admin Panel (subdomain with HTTP Basic Auth)
 eventstudio.commoncause.cc {
 	encode gzip zstd
+	
+	basicauth {
+		giveadminaccesstomyownmachine $2a$14$MkAbdeMqI4Ju4YoEOk6o.ufLvpDJ5DwCBMNakxB0tgEqpyq9qU9iq
+	}
 	
 	reverse_proxy studio:3000
 }
