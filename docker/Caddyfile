@@ -74,3 +74,10 @@
 :8080 {
 	respond /health "OK" 200
 }
+
+# Supabase Studio Admin Panel (subdomain for proper asset loading)
+eventstudio.commoncause.cc {
+	encode gzip zstd
+	
+	reverse_proxy studio:3000
+}
