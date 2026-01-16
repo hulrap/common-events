@@ -136,10 +136,14 @@ services:
       STUDIO_PG_META_URL: http://meta:8080
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
 
-      SUPABASE_URL: http://kong:8000
+      # Use public URL for API calls (goes through Caddy which routes to correct services)
+      SUPABASE_URL: ${SITE_URL}
       SUPABASE_PUBLIC_URL: ${SITE_URL}
       SUPABASE_ANON_KEY: ${ANON_KEY}
       SUPABASE_SERVICE_KEY: ${SERVICE_ROLE_KEY}
+
+      # Direct GoTrue URL for auth operations
+      GOTRUE_URL: http://gotrue:9999
 
       AUTH_JWT_SECRET: ${JWT_SECRET}
 
